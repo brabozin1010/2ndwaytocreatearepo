@@ -4,7 +4,7 @@ speak('p');
 
 let tentativas = 0;
 let listOfNumbers = [];
-let numeroLimite = 100;
+let numeroLimite = 10;
 let numeroAleaatorio = makeNewRandomNumber(listOfNumbers);
 
 function verificarChute() {
@@ -54,7 +54,7 @@ function makeNewRandomNumber(lista) {
         lista = [];
     }
     while (true) {
-        let num = parseInt(Math.random() * 100 + 1);
+        let num = parseInt(Math.random() * 10 + 1);
         if (lista.includes(num)) {
             break
         } else {
@@ -69,5 +69,5 @@ function makeNewRandomNumber(lista) {
 
 function exibirMensagemInicial() {
     defNewText('h1', "Novo Jogo!");
-    defNewText('p', "Temos um novo número secreto entre 1 e 100!");
+    defNewText('p', "Temos um novo número secreto entre 1 e 10!");
 }
