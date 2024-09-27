@@ -69,5 +69,5 @@ function makeNewRandomNumber(lista) {
 
 function exibirMensagemInicial() {
     defNewText('h1', "Novo Jogo!");
-    defNewText('p', "Temos um novo número secreto entre 1 e 10!");
+    defNewText('p', "Temos um novo número secreto entre 1 e 10! simular conflito!!");
 }
